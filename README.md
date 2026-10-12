@@ -26,7 +26,7 @@ mean/median tokens, stop vs length counts, distinct-2 (unique word bigrams / tot
 the Q8_0 output of the same seed, median per-stream tok/s. These are rough surface metrics, not quality scores;
 the page states that judgement is left to the reader.
 
-Features: prompt tabs with full prompt text; sample switcher s0..s9 (also arrow keys / buttons) that changes all three
+Features: quant filter chips (show any subset of the 5 variants, at least one; hidden variants disappear from columns, blind view and all stats tables; choice saved in localStorage and in the URL hash as `/q=A,B,C1`); columns fill the width for 1-3 selections, scroll horizontally for 4-5 on narrower screens, and stack on phones; prompt tabs with full prompt text; sample switcher s0..s9 (also arrow keys / buttons) that changes all three
 variants together; per-variant "Expand all 10"; blind view (variant names hidden, order shuffled per prompt+sample with a
 deterministic seeded shuffle, stats hidden, "Reveal labels" button); URL hash `#P03/s2` (`/blind` suffix) restores state.
 All model text is inserted via `textContent` inside `white-space: pre-wrap` boxes (prompt shown dim, continuation bright).
